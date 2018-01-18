@@ -5,13 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.zhaogaofei.linearlayoutadapter.MainActivity">
-
-    <Button
-        android:id="@+id/bt_two_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="skip to two type page"/>
+    tools:context="com.example.zhaogaofei.linearlayoutadapter.TwoTypeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,28 +13,28 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/bt_add"
+            android:id="@+id/bt_add_two_type"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="add" />
 
         <Button
-            android:id="@+id/bt_delete"
+            android:id="@+id/bt_delete_two_type"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="delete" />
 
         <Button
-            android:id="@+id/bt_update"
+            android:id="@+id/bt_update_two_type"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="update" />
 
         <Button
-            android:id="@+id/bt_clear"
+            android:id="@+id/bt_clear_two_type"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -48,18 +42,12 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/edit_delete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="please input delete position"/>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linear_layout"
+            android:id="@+id/linear_layout_two_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" />

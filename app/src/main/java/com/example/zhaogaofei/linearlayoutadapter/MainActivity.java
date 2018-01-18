@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private LinearLayout mLinearLayout;
+    private Button mBtTwoType;
     private Button mBtAdd;
     private Button mBtDelete;
     private Button mBtUpdate;
@@ -35,10 +36,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
+        mBtTwoType = (Button) findViewById(R.id.bt_two_type);
         mBtAdd = (Button) findViewById(R.id.bt_add);
         mBtDelete = (Button) findViewById(R.id.bt_delete);
         mBtUpdate = (Button) findViewById(R.id.bt_update);
         mBtClear = (Button) findViewById(R.id.bt_clear);
+        mBtTwoType.setOnClickListener(this);
         mBtAdd.setOnClickListener(this);
         mBtDelete.setOnClickListener(this);
         mBtUpdate.setOnClickListener(this);
@@ -65,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
+            case R.id.bt_two_type:
+                TwoTypeActivity.start(this);
+                break;
             case R.id.bt_add:
 //                mMyAdapter.addData(new TestModel("", "add"));
 

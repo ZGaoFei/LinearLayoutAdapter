@@ -13,12 +13,10 @@ import com.example.zhaogaofei.linearlayoutadapter.adapter.LinearLayoutAdapter;
 
 
 public class TestAdapter extends LinearLayoutAdapter<TestModel> implements View.OnClickListener {
-    private List<TestModel> mList;
     private Context mContext;
 
     public TestAdapter(List<TestModel> list, Context context) {
         super(list);
-        this.mList = list;
         mContext = context;
     }
 
