@@ -24,3 +24,8 @@
 #### 缺点：
 
 该使用场景比较单一，没有listView的缓存策略，不存在复用机制，因此建议少量的添加item View
+
+使用的数据结构比较单一，目前仅支持List集合，因此在使用时，可以将源码复制下来进行相应的修改
+
+具体的逻辑在
+[adapter文件下](https://github.com/ZGaoFei/LinearLayoutAdapter/tree/master/app/src/main/java/com/example/zhaogaofei/linearlayoutadapter/adapter)
